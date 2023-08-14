@@ -1,0 +1,112 @@
+.listBox {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+  .listBox {
+    gap: 20px;
+  }
+}
+.listBox .item {
+  width: calc((100% - 60px) / 3);
+  isolation: isolate;
+  position: relative;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .listBox .item {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .listBox .item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+.listBox .item:hover .picBox {
+  background: #0447f0;
+}
+.listBox .item:hover .title {
+  color: #fff;
+}
+.listBox .item:hover .downloadBtn {
+  background: #fff;
+}
+.listBox .item:hover .downloadBtn::after {
+  background: #0447f0;
+}
+.listBox .picBox {
+  padding: 0 30px 30px;
+  position: relative;
+  isolation: isolate;
+  background: #ebecee;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .listBox .picBox {
+    padding: 0 20px 20px;
+  }
+}
+.listBox .picBox .pic {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.listBox .infoBox {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .listBox .infoBox {
+    flex-direction: column;
+  }
+}
+.listBox .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .listBox .title {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .listBox .title {
+    font-size: 1.125rem;
+  }
+}
+.listBox .downloadBtn {
+  display: block;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0447f0;
+  border-radius: 100%;
+  width: 43px;
+  aspect-ratio: 1;
+  background: #99d3f3;
+  margin: 0 0 0 10px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .listBox .downloadBtn {
+    margin: 15px auto 0;
+  }
+}
+.listBox .downloadBtn::after {
+  content: "";
+  width: 15px;
+  aspect-ratio: 1;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_download.svg") center no-repeat;
+          mask: url("../images/icon/icon_download.svg") center no-repeat;
+  background: #fff;
+}/*# sourceMappingURL=download.css.map */

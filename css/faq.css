@@ -1,0 +1,159 @@
+.faq .listBox .item {
+  background: #fff;
+  position: relative;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+.faq .listBox .item .tag {
+  position: absolute;
+  border: 2px solid #0447f0;
+  border-radius: 100%;
+  width: 45px;
+  aspect-ratio: 1;
+  right: 30px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .faq .listBox .item .tag {
+    right: 20px;
+    width: 20px;
+    top: 10px;
+    border-width: 1px;
+  }
+}
+.faq .listBox .item .tag::before {
+  pointer-events: none;
+  content: "";
+  width: 15px;
+  aspect-ratio: 1;
+  display: block;
+  border: 2px solid #0447f0;
+  text-align: center;
+  z-index: 9;
+  -webkit-mask: url("../images/icon_plus.svg") center no-repeat;
+          mask: url("../images/icon_plus.svg") center no-repeat;
+  background: #0447f0;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .faq .listBox .item .tag::before {
+    width: 10px;
+    padding: 6px 0 0 0px;
+    border: 1px solid #0447f0;
+  }
+}
+.faq .listBox .item + .item {
+  margin: 20px 0 0;
+}
+.faq .listBox .item.active {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 767px) {
+  .faq .listBox .item.active .tag {
+    border-color: #fff;
+    width: 20px;
+  }
+}
+.faq .listBox .item.active .tag::before {
+  -webkit-mask: url("../images/icon_minus.svg") center no-repeat;
+          mask: url("../images/icon_minus.svg") center no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background: #0447f0;
+}
+@media screen and (max-width: 767px) {
+  .faq .listBox .item.active .tag::before {
+    background: #fff;
+  }
+}
+.faq .listBox .item.active .qBox::before {
+  color: #fff;
+  background: #0447f0;
+}
+.faq .listBox .item.active .qBox::after {
+  opacity: 0;
+}
+.faq .qBox {
+  width: 100%;
+  text-align: left;
+  background: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  padding: 30px 100px 25px 180px;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .faq .qBox {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .faq .qBox {
+    font-size: 1.125rem;
+    padding: 60px 20px 20px;
+  }
+}
+.faq .qBox::before {
+  content: "Question";
+  color: #0447f0;
+  font-weight: normal;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0;
+  display: block;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .faq .qBox::before {
+    padding: 0 20px;
+    justify-content: flex-start;
+    width: 100%;
+    bottom: auto;
+    height: 40px;
+  }
+}
+.faq .qBox::after {
+  content: "";
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20%;
+  width: 1px;
+  background: #000;
+  display: block;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .faq .qBox::after {
+    left: 20px;
+    right: 20px;
+    width: auto;
+    height: 1px;
+    top: 40px;
+    transform: translateY(0);
+  }
+}
+.faq .aBox {
+  font-size: 1.25rem;
+  color: #333333;
+  display: none;
+  padding: 30px 40px;
+  background: #fff;
+  border-top: #000 1px solid;
+}
+@media screen and (max-width: 767px) {
+  .faq .aBox {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=faq.css.map */

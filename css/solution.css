@@ -1,0 +1,144 @@
+.applicationBox .applicationInfo {
+  padding: 0 0 6%;
+  background: linear-gradient(to bottom, rgba(235, 236, 238, 0) 50%, rgb(235, 236, 238) 100%);
+}
+.applicationBox .applicationInfo .container {
+  max-width: 1530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .applicationBox .applicationInfo .container {
+    flex-direction: column;
+  }
+}
+.applicationBox .applicationInfo .picBox {
+  width: 40%;
+  max-width: 500px;
+  padding: 0 30px 30px;
+  position: relative;
+  isolation: isolate;
+  background: #0447f0;
+}
+@media screen and (max-width: 1000px) {
+  .applicationBox .applicationInfo .picBox {
+    padding: 0 20px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationBox .applicationInfo .picBox {
+    width: 100%;
+    margin: 0 0 20px 0 !important;
+  }
+}
+.applicationBox .applicationInfo .picBox .pic {
+  z-index: 1;
+}
+.applicationBox .applicationInfo .infoBox {
+  width: 60%;
+  padding: 0 30px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .applicationBox .applicationInfo .infoBox {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+}
+.applicationBox .subTitle {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 0 4% 0;
+}
+@media screen and (max-width: 1000px) {
+  .applicationBox .subTitle {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationBox .subTitle {
+    font-size: 1.25rem;
+  }
+}
+.applicationBox .description {
+  color: #444444;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  padding: 0 0 0 110px;
+}
+@media screen and (max-width: 1000px) {
+  .applicationBox .description {
+    padding: 0 0 0 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationBox .description {
+    padding: 0 0 0 30px;
+    font-size: 1rem;
+  }
+}
+
+.application {
+  padding: 3% 0 0;
+}
+.application .listBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.application .listBox .item {
+  width: calc((100% - 30px) / 3);
+}
+@media screen and (max-width: 1000px) {
+  .application .listBox .item {
+    width: calc((100% - 15px) / 2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .application .listBox .item {
+    width: 100%;
+  }
+}
+.application .listBox .item:hover .picBox {
+  background: #0447f0;
+}
+.application .listBox .item:hover .title {
+  color: #fff;
+}
+.application .listBox .picBox {
+  padding: 0 20px 20px;
+  position: relative;
+  isolation: isolate;
+  background: #ebecee;
+  transition: all 0.3s ease;
+}
+.application .listBox .picBox .pic {
+  z-index: 1;
+  margin: 0 0 20px;
+}
+.application .listBox .picBox .title {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  line-height: 1.1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .application .listBox .picBox .title {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .application .listBox .picBox .title {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=solution.css.map */

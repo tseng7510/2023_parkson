@@ -1,0 +1,486 @@
+section + section {
+  margin-top: 50px;
+}
+
+.aboutBox .about {
+  overflow: hidden;
+}
+.aboutBox .boxOut {
+  position: relative;
+}
+.aboutBox .boxOut::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(235, 236, 238, 0) 50%, rgb(235, 236, 238) 100%);
+  inset: 0 0 40% 0;
+  z-index: -2;
+}
+.aboutBox .boxOut .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .boxOut .container {
+    flex-direction: column;
+  }
+}
+.aboutBox .boxOut .container::before {
+  content: "";
+  position: absolute;
+  background: #0447f0;
+  inset: 40% -80px 0;
+  z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .boxOut .container::before {
+    inset: 20% -80px 0;
+  }
+}
+.aboutBox .boxOut .box1 {
+  width: 56%;
+  max-width: 708px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .boxOut .box1 {
+    width: 100%;
+  }
+}
+.aboutBox .boxOut .box1 .description2,
+.aboutBox .boxOut .box1 .description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444444;
+  margin: 0 0 30px 0;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .boxOut .box1 .description2,
+  .aboutBox .boxOut .box1 .description {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .aboutBox .boxOut .box1 .description2,
+  .aboutBox .boxOut .box1 .description {
+    margin: 0 0 20px 0;
+  }
+}
+.aboutBox .boxOut .box1 .description2 {
+  color: #fff;
+  background: #0447f0;
+}
+.aboutBox .boxOut .box1 .pic {
+  margin: 0 0 20px 0;
+}
+.aboutBox .boxOut .box2 {
+  width: 44%;
+  max-width: 560px;
+  margin: 0 0 0 30px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .boxOut .box2 {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+}
+.aboutBox .boxOut .box2 .picBox {
+  position: relative;
+}
+.aboutBox .boxOut .box2 .infoBox {
+  position: absolute;
+  inset: 30px;
+  z-index: 2;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 7px 7px 7px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  padding: 10% 20px 20px 0;
+}
+.aboutBox .boxOut .box2 .descriptionBox {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .aboutBox .boxOut .box2 .descriptionBox {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .boxOut .box2 .descriptionBox {
+    font-size: 1.125rem;
+  }
+}
+.aboutBox .boxOut .box2 .descriptionBox::after, .aboutBox .boxOut .box2 .descriptionBox::before {
+  content: "";
+  width: 7px;
+  height: 500%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 10px);
+  background: #fff;
+}
+.aboutBox .boxOut .box2 .descriptionBox::after {
+  bottom: auto;
+  top: calc(100% + 10px);
+}
+.aboutBox .box3 .container {
+  background: #b6b6b6;
+  display: flex;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .box3 .container {
+    flex-direction: column;
+  }
+}
+.aboutBox .box3 .container .pic {
+  position: relative;
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .box3 .container .pic {
+    width: 100%;
+  }
+}
+.aboutBox .box3 .container .pic::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 80%;
+  display: block;
+  background: linear-gradient(to right, rgba(182, 182, 182, 0) 0%, rgb(182, 182, 182) 80%);
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .box3 .container .pic::after {
+    width: 100%;
+    inset: 80% 0 0 0;
+    background: linear-gradient(to bottom, rgba(182, 182, 182, 0) 0%, rgb(182, 182, 182) 80%);
+  }
+}
+.aboutBox .box3 .container .pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutBox .box3 .container .description {
+  padding: 30px;
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  width: 40%;
+}
+@media screen and (max-width: 1000px) {
+  .aboutBox .box3 .container .description {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .box3 .container .description {
+    width: 100%;
+  }
+}
+.aboutBox .box4 {
+  margin: 0;
+}
+.aboutBox .box4 .info {
+  max-width: 1000px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  text-align: center;
+  background: linear-gradient(to right, rgb(4, 71, 240) 0%, rgb(4, 15, 77) 100%);
+  color: #fff;
+  padding: 5% 10%;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .box4 .info {
+    transform: translateY(0%);
+  }
+}
+.aboutBox .box4 .description {
+  font-weight: 700;
+  font-size: 1.75rem;
+  border-bottom: 1px solid #000;
+  padding: 0 22% 10%;
+}
+@media screen and (max-width: 1000px) {
+  .aboutBox .box4 .description {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutBox .box4 .description {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .aboutBox .box4 .description {
+    padding: 20px 0;
+  }
+}
+
+.qualityBox .pageTitle {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .pageTitle {
+    margin-bottom: 20px;
+  }
+}
+.qualityBox .boxOut .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .boxOut .container {
+    flex-direction: column;
+  }
+}
+.qualityBox .boxOut .box1 {
+  max-width: 708px;
+  display: flex;
+  flex-direction: column;
+}
+.qualityBox .boxOut .box1 .description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444444;
+  margin: 0 0 30px 0;
+}
+@media screen and (max-width: 1000px) {
+  .qualityBox .boxOut .box1 .description {
+    padding: 0 0 0 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .boxOut .box1 .description {
+    padding: 0 0 0 0px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .qualityBox .boxOut .box1 .description {
+    margin: 0 0 20px 0;
+  }
+}
+.qualityBox .boxOut .box1 .info {
+  padding: 20px;
+  background: #d42520;
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 700;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .qualityBox .boxOut .box1 .info {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .boxOut .box1 .info {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .qualityBox .boxOut .box1 .info {
+    font-size: 1.25rem;
+  }
+}
+.qualityBox .boxOut .box1 .info span {
+  font-size: 1.375rem;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .boxOut .box1 .info span {
+    font-size: 1.125rem;
+  }
+}
+.qualityBox .boxOut .box2 {
+  max-width: 560px;
+  background: #0447f0;
+  padding: 0 30px 30px;
+  margin: 0 0 0 30px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .boxOut .box2 {
+    margin: 10px 0 0;
+  }
+}
+.qualityBox .box3 {
+  margin-bottom: -100px;
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .box3 {
+    margin-bottom: 0;
+  }
+}
+.qualityBox .box3 .container {
+  max-width: 1530px;
+  background: url("../images/in/quality_bg.jpg") center top no-repeat;
+  background-size: cover;
+  padding: 7% 20px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .qualityBox .box3 .container {
+    padding: 7% 20px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .box3 .container {
+    padding: 40px 20px;
+  }
+}
+.qualityBox .box3 .container .description {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.7;
+  max-width: 730px;
+}
+@media screen and (max-width: 1000px) {
+  .qualityBox .box3 .container .description {
+    font-size: 1.25rem;
+  }
+}
+.qualityBox .box4 {
+  max-width: 1605px;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 0 auto;
+}
+.qualityBox .box4 .listBox {
+  display: flex;
+  flex-shrink: 0;
+}
+.qualityBox .box4 .listBox .pic {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+  .qualityBox .box4 .listBox .pic img {
+    height: 270px;
+  }
+}
+
+.milestone .listBox {
+  position: relative;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+.milestone .listBox::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  display: block;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (min-width: 767px) {
+  .milestone .listBox::before {
+    left: 50%;
+  }
+}
+.milestone .listBox .item {
+  width: 50%;
+  line-height: 1.7;
+  position: relative;
+}
+@media screen and (min-width: 767px) {
+  .milestone .listBox .item:nth-child(even) .year,
+  .milestone .listBox .item:nth-child(even) .description {
+    padding: 0 10% 0 0;
+    text-align: right;
+  }
+  .milestone .listBox .item:nth-child(even) .year::before {
+    left: auto;
+    right: 0;
+  }
+  .milestone .listBox .item:nth-child(odd) {
+    margin: 0 0 0 auto;
+  }
+  .milestone .listBox .item:nth-child(odd) .year,
+  .milestone .listBox .item:nth-child(odd) .description {
+    padding: 0 0 0 10%;
+  }
+  .milestone .listBox .item:nth-child(odd) .year::before {
+    left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .milestone .listBox .item {
+    width: 100%;
+  }
+  .milestone .listBox .item + .item {
+    margin-top: 30px;
+  }
+}
+.milestone .listBox .year,
+.milestone .listBox .description {
+  padding: 0 0 0 30px;
+}
+.milestone .listBox .year {
+  font-size: 4.25rem;
+  font-weight: 700;
+  color: #0447f0;
+  position: relative;
+  line-height: 1;
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 1000px) {
+  .milestone .listBox .year {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .milestone .listBox .year {
+    font-size: 1.875rem;
+  }
+}
+.milestone .listBox .year::before {
+  content: "";
+  height: 3px;
+  display: block;
+  background: #0447f0;
+  width: 32%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .milestone .listBox .year::before {
+    width: 100px;
+    bottom: -5px;
+  }
+}
+.milestone .listBox .description {
+  color: #444444;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 767px) {
+  .milestone .listBox .description {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=about.css.map */
