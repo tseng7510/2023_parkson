@@ -20,19 +20,27 @@
         <div class="indexTop">
 
           <div class="banner wow">
-            <div class="listBox">
-              <div class="item"><img src="../images/index/banner.jpg" alt=""></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <? for ($i = 0; $i < 3; $i++) { ?>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="productsTopBox">
+                        <div class="infoBox">
+                          <h2 class="title wow fadeInUp" data-wow-delay="0s">INNOVATION & RELIABILITY</h2>
+                          <div class="subTitle wow fadeInUp" data-wow-delay="0.2s">Unique & Differentiated</div>
+                          <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
+                        </div>
+                      </div>
+                      <div class="pic"><img src="../images/index/banner.jpg" alt=""></div>
+                    </div>
+                  </div>
+                <? } ?>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <section class="productsTopBox">
-            <div class="infoBox">
-              <h2 class="title wow fadeInUp" data-wow-delay="0s">PARD2-170IC</h2>
-              <div class="subTitle wow fadeInUp" data-wow-delay="0.2s">High accuracy, and high rigidity</div>
-              <div class="description wow fadeInLeft" data-wow-delay="0.2s">WSI devotes to providing the best quality oil seal products. We are confident our grease seal products will make you satisfied.WSI devotes to providing the best quality oil seal ...</div>
-              <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
-            </div>
-          </section>
         </div>
 
         <section class="productsBox wow">
@@ -47,11 +55,12 @@
           </div>
           <div class="infoBox">
             <div class="content">
-              <div class="prevInfo">
+              <!-- <div class="prevInfo">
                 <div class="swiper-prev"></div>
                 <div class="prevTitle">MNC / MTD / DAS / PTS</div>
-              </div>
+              </div> -->
               <h2 class="unitTitle">Products category</h2>
+              <div class="swiper-prev"></div>
               <div class="swiper-next"></div>
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -84,7 +93,6 @@
 
         <section class="aboutBox">
           <div class="container">
-            <hr />
             <div class="topBox">
               <div class="logo">
                 <div class="pic"><img class="lazyLoad" data-src="../images/logo2.png" alt="PARKSON WU INDUSTRIAL CO., LTD.," src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" /></div>
@@ -118,8 +126,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 1</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Aerospace Processing and Application Industry</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -129,8 +137,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 2</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Green Energy Machinery Processing and Application</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -140,8 +148,9 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 3</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Bicycle, electric vehicle, automobile, and ship parts processing industry
+                        </div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -151,8 +160,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 4</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">3C high-tech industry, semiconductor parts</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -162,8 +171,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 5</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Machine Tool Parts Processing Industry</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -173,8 +182,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 6</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Medical Industry</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -184,8 +193,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 7</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Automated component processing industry</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -195,8 +204,8 @@
                     <div class="pic"><img src="../images/index/application.jpg" alt=""></div>
                     <div class="infoBox">
                       <div class="descriptionBox">
-                        <div class="title">Aerospace Processing and Application Industry 8</div>
-                        <div class="description">The machining parts of the 5th axis rotating table with the machine tool include engine blades, casings, ring parts, aircraft cabin seat structural parts, national defense aerospace, unmanned aerial vehicles, and other processing industries.</div>
+                        <div class="title">Daily Necessities Manufacturing and other Fields</div>
+                        <a href="about.php" class="indexMore wow fadeInLeft" data-wow-delay="0.4s">READ MORE</a>
                       </div>
                     </div>
                   </div>
@@ -216,44 +225,44 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
+                    <i><img src="../images/index/icon_application2.svg" alt=""></i>
                     <div class="title">Green Energy Machinery Processing and Application</div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
+                    <i><img src="../images/index/icon_application3.svg" alt=""></i>
                     <div class="title">Bicycle, electric vehicle, automobile, and ship parts processing industry </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
-                    <div class="title">Fluid component processing industry </div>
+                    <i><img src="../images/index/icon_application4.svg" alt=""></i>
+                    <div class="title">3C high-tech industry, semiconductor parts</div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
-                    <div class="title">Machine Tool Parts Processing Industry </div>
+                    <i><img src="../images/index/icon_application5.svg" alt=""></i>
+                    <div class="title">Machine Tool Parts Processing Industry</div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
-                    <div class="title">Wafer Cutting Industry </div>
+                    <i><img src="../images/index/icon_application6.svg" alt=""></i>
+                    <div class="title">Medical Industry</div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
-                    <div class="title">Automated component processing industry </div>
+                    <i><img src="../images/index/icon_application7.svg" alt=""></i>
+                    <div class="title">Automated component processing industry</div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="item">
-                    <i><img src="../images/index/icon_application.svg" alt=""></i>
-                    <div class="title">Wafer Cutting Industry </div>
+                    <i><img src="../images/index/icon_application8.svg" alt=""></i>
+                    <div class="title">Daily Necessities Manufacturing and other Fields</div>
                   </div>
                 </div>
               </div>
@@ -301,6 +310,19 @@
   </div>
   <?php include('include_body_bottom.php'); ?>
   <script>
+    let swiperBanner = new Swiper('.banner  .swiper', {
+      slidesPerView: 1,
+      effect: 'fade',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      fadeEffect: {
+        crossFade: true,
+      }
+    });
+
     let swiper = new Swiper('.productsBox .picBox .swiper', {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -319,13 +341,13 @@
       fadeEffect: {
         crossFade: true,
       },
-      on: {
-        slideNextTransitionEnd: function() {
-          let prevInfoBox = document.querySelector('.prevInfo .prevTitle');
-          let prevInfo = swiper.slides[swiper.previousIndex].querySelector('img').getAttribute('title');
-          prevInfoBox.innerHTML = prevInfo;
-        },
-      },
+      // on: {
+      //   slideNextTransitionEnd: function() {
+      //     let prevInfoBox = document.querySelector('.prevInfo .prevTitle');
+      //     let prevInfo = swiper.slides[swiper.previousIndex].querySelector('img').getAttribute('title');
+      //     prevInfoBox.innerHTML = prevInfo;
+      //   },
+      // },
       navigation: {
         nextEl: '.productsBox .swiper-next',
         prevEl: '.productsBox .swiper-prev',

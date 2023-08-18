@@ -83,7 +83,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><a href="products_detail.php">APCL-400 P7D6</a></td>
+                      <td>APCL-400 P7D6</td>
                       <td>400×400</td>
                       <td>Lift and rotation</td>
                     </tr>

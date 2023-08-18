@@ -88,7 +88,7 @@
                   </li>
                 </ul>
                 <div class="pageBtnBox wow fadeInUp">
-                  <button class="btnStyle send">Send Massage</button>
+                  <button class="btnStyle send" onclick="location.href='contact_ok.php'">Send Massage</button>
                 </div>
               </form>
 

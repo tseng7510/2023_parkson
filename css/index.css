@@ -37,11 +37,11 @@ section + section {
   }
 }
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   .menuBox {
     position: unset;
   }
-}
+} */
 
 @media screen and (min-width: 1000px) {
   .headFix .siteHeader {
@@ -74,9 +74,6 @@ section + section {
 .mainBox {
   position: relative;
 }
-.mainBox .indexTop {
-  display: flex;
-}
 @media screen and (max-width: 860px) {
   .mainBox .indexTop {
     flex-direction: column;
@@ -86,31 +83,79 @@ section + section {
 .banner {
   order: 2;
 }
-@media screen and (max-width: 1000px) {
-  .banner {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 860px) {
-  .banner {
-    width: 100%;
-    order: 0;
-  }
-}
 .banner .listBox {
   height: 100%;
 }
 .banner .item {
   height: 100%;
+  display: flex;
+}
+@media screen and (max-width: 860px) {
+  .banner .item {
+    flex-direction: column;
+  }
+}
+.banner .item .pic {
   line-height: 0;
+}
+@media screen and (max-width: 1000px) {
+  .banner .item .pic {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .banner .item .pic {
+    width: 100%;
+    order: 0;
+    order: -1;
+  }
 }
 .banner .item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: right top;
-     object-position: right top;
+  object-position: right top;
+}
+.banner .swiper-pagination {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 46%;
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+}
+@media screen and (max-width: 860px) {
+  .banner .swiper-pagination {
+    position: relative;
+    flex-direction: row;
+    transform: translateY(0);
+    top: auto;
+    left: auto;
+    background: #ebecee;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0 40px;
+  }
+}
+.banner .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  opacity: 0.4;
+  margin: 15px 0;
+}
+@media screen and (max-width: 860px) {
+  .banner .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 15px;
+    background: #aaaaaa;
+  }
+}
+.banner .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 .indexMore {
@@ -129,6 +174,7 @@ section + section {
   position: relative;
   isolation: isolate;
   transition: all 0.3s ease;
+  line-height: 1;
 }
 @media screen and (max-width: 767px) {
   .indexMore {
@@ -137,7 +183,7 @@ section + section {
   }
 }
 .indexMore::after {
-  content: "";
+  content: '';
   border-radius: 30px;
   height: 0;
   width: 0;
@@ -172,7 +218,7 @@ section + section {
   }
 }
 .unitTitle::before {
-  content: "";
+  content: '';
   width: 50px;
   height: 3px;
   background: #0447f0;
@@ -192,22 +238,19 @@ section + section {
   z-index: 9;
   height: 110vh;
   flex-shrink: 0;
+  width: 50%;
 }
 @media screen and (max-width: 1700px) {
   .productsTopBox {
     padding: 15% 20px 20px;
   }
 }
-@media screen and (max-width: 1000px) {
-  .productsTopBox {
-    width: 50%;
-  }
-}
 @media screen and (max-width: 860px) {
   .productsTopBox {
     width: 100%;
     height: auto;
-    padding: 20px 20px 40px;
+    padding: 20px 20px 30px;
+    background: #ebecee;
   }
 }
 .productsTopBox .infoBox {
@@ -219,29 +262,47 @@ section + section {
     width: 100%;
   }
 }
+.productsTopBox .indexMore {
+  max-width: 125px;
+}
 .productsTopBox .title {
-  font-size: 4.5rem;
   font-weight: 700;
   font-size: 3.375rem;
+  line-height: 1.1;
+  margin: 0 0 20px;
 }
-.productsTopBox .subTitle {
-  color: #444444;
-  font-size: 1.5rem;
-  margin: 0 0 20px 0;
-}
-@media screen and (max-width: 1000px) {
-  .productsTopBox .subTitle {
-    font-size: 1.25rem;
+@media screen and (max-width: 860px) {
+  .productsTopBox .title {
+    margin: 0 0 10px;
   }
 }
-.productsTopBox .subTitle::before {
-  content: "FEATURE";
-  display: block;
+@media screen and (max-width: 1000px) {
+  .productsTopBox .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  .productsTopBox .title {
+    font-size: 2rem;
+  }
+}
+.productsTopBox .subTitle {
   font-size: 2rem;
   font-weight: 600;
   color: #07111f;
-  margin: 0 0 10px 0;
+  margin: 0 0 100px 0;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .productsTopBox .subTitle {
+    margin: 0 0 50px 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  .productsTopBox .subTitle {
+    font-size: 1.125rem;
+    margin: 0 0 30px 0;
+  }
 }
 .productsTopBox .description {
   max-width: 350px;
@@ -358,8 +419,7 @@ section + section {
   width: 100%;
   max-width: 660px;
   position: relative;
-  padding: 0 60px 0 0;
-  margin: 0 0 0 auto;
+  padding: 0 60px;
 }
 @media screen and (max-width: 830px) {
   .productsBox .infoBox .content {
@@ -430,34 +490,41 @@ section + section {
   position: absolute;
   width: 19px;
   aspect-ratio: 19/41;
-  -webkit-mask: url("../images/icon/icon_arrow.svg") center no-repeat;
-          mask: url("../images/icon/icon_arrow.svg") center no-repeat;
+  -webkit-mask: url('../images/icon/icon_arrow.svg') center no-repeat;
+  mask: url('../images/icon/icon_arrow.svg') center no-repeat;
   background: rgba(155, 188, 215, 0.5);
   cursor: pointer;
+  top: 57.7%;
+  left: 0;
 }
 @media screen and (max-width: 830px) {
   .productsBox .swiper-next,
   .productsBox .swiper-prev {
     width: 15px;
+    top: 0;
+    z-index: 9;
+  }
+}
+@media screen and (max-width: 830px) {
+  .productsBox .swiper-prev {
+    transform: translateY(-100%);
   }
 }
 .productsBox .swiper-next {
+  left: auto;
   right: 0;
   transform: scaleX(-1);
-  top: 57.7%;
 }
 @media screen and (max-width: 830px) {
   .productsBox .swiper-next {
-    top: 0;
-    transform: scaleX(-1) translateY(-220%);
-    z-index: 9;
+    transform: scaleX(-1) translateY(-100%);
   }
 }
 
 .aboutBox {
   background: #ebecee;
   margin: 0;
-  padding: 3.5% 0;
+  padding: 7% 0;
 }
 .aboutBox hr {
   height: 2px;
@@ -566,12 +633,12 @@ section + section {
   }
 }
 .aboutBox .infoBox .location::before {
-  content: "";
+  content: '';
   width: 70px;
   aspect-ratio: 1;
   display: block;
-  -webkit-mask: url("../images/icon/icon_location.svg") left no-repeat;
-          mask: url("../images/icon/icon_location.svg") left no-repeat;
+  -webkit-mask: url('../images/icon/icon_location.svg') left no-repeat;
+  mask: url('../images/icon/icon_location.svg') left no-repeat;
   background: #26c9ff;
   position: absolute;
   left: 30px;
@@ -629,12 +696,12 @@ section + section {
   }
 }
 .aboutBox .infoBox a::before {
-  content: "";
+  content: '';
   width: 20px;
   aspect-ratio: 1;
   display: block;
-  -webkit-mask: url("../images/icon/icon_tel.svg") no-repeat;
-          mask: url("../images/icon/icon_tel.svg") no-repeat;
+  -webkit-mask: url('../images/icon/icon_tel.svg') no-repeat;
+  mask: url('../images/icon/icon_tel.svg') no-repeat;
   background: #000;
   margin: 0 10px 0 0;
   transition: all 0.3s ease;
@@ -654,7 +721,7 @@ section + section {
 }
 
 .applicationBox {
-  background: url("../images/index/application_bg.jpg") top right no-repeat;
+  background: url('../images/index/application_bg.jpg') top right no-repeat;
   position: relative;
   padding: 3% 0px 6%;
   margin: 0;
@@ -665,7 +732,7 @@ section + section {
   }
 }
 .applicationBox::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0 50% 0 0;
   display: block;
@@ -726,7 +793,7 @@ section + section {
   height: 100%;
 }
 .applicationBox .picSwiper .item .pic::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0px;
   z-index: 1;
@@ -751,19 +818,20 @@ section + section {
   color: #fff;
   position: relative;
 }
-.applicationBox .picSwiper .item .descriptionBox::after, .applicationBox .picSwiper .item .descriptionBox::before {
-  content: "";
+.applicationBox .picSwiper .item .descriptionBox::after,
+.applicationBox .picSwiper .item .descriptionBox::before {
+  content: '';
   width: 7px;
   height: 500%;
   display: block;
   position: absolute;
   left: 0;
-  bottom: calc(100% + 20px);
+  bottom: calc(100% + 40px);
   background: #fff;
 }
 .applicationBox .picSwiper .item .descriptionBox::after {
   bottom: auto;
-  top: calc(100% + 20px);
+  top: calc(100% + 40px);
 }
 .applicationBox .picSwiper .item .descriptionBox .title {
   font-size: 1.75rem;
@@ -821,7 +889,7 @@ section + section {
   transition: all 0.3s ease;
 }
 .applicationBox .infoSwiper .swiper-slide .item::before {
-  content: "";
+  content: '';
   z-index: -1;
   position: absolute;
   inset: 0 100% 0 0;
@@ -830,10 +898,10 @@ section + section {
   transition: all 0.3s ease;
 }
 .applicationBox .infoSwiper .swiper-slide .item i {
-  width: 60px;
-  aspect-ratio: 1;
+  width: 86px;
+  height: 86px;
   display: block;
-  margin: 0 0 10% 0;
+  margin: 0 0 10px 0;
 }
 .applicationBox .infoSwiper .swiper-slide .item .title {
   word-break: break-word;
@@ -857,7 +925,7 @@ section + section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (min-width: 767px) {
   .applicationBox .swiper {
@@ -1022,11 +1090,11 @@ section + section {
   padding: 0 0 0 3px;
 }
 .newsBox .infoBox .more::before {
-  content: "";
+  content: '';
   width: 9px;
   height: 19px;
-  -webkit-mask: url("../images/icon/icon_arrow.svg") no-repeat;
-          mask: url("../images/icon/icon_arrow.svg") no-repeat;
+  -webkit-mask: url('../images/icon/icon_arrow.svg') no-repeat;
+  mask: url('../images/icon/icon_arrow.svg') no-repeat;
   background: #fff;
   transform: scaleX(-1);
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

@@ -39,6 +39,7 @@
                   The FMS takes the pallet as the storage unit, takes out the pallet of the tray and put it into the suitable storage or processing position through the lifting and horizontal movement and rotation</div>
                 <div class="btnBox">
                   <button class="btnStyle" title="VIEW MORE">VIEW MORE</button>
+                  <button class="btnStyle" title="PDF DOWNLOAD">PDF DOWNLOAD</button>
                 </div>
               </div>
             </div>
@@ -60,7 +61,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                     <tr>
+                    <tr>
                       <td><a href="products_detail.php">APCL-400 P7D6</a></td>
                       <td>400×400</td>
                       <td>Lift and rotation</td>
