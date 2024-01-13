@@ -28,12 +28,6 @@
           <div class="pageTitleBox">
             <h1 class="pageTitle wow fadeInUp">Flexible manufacturing system (FMS)</h1>
           </div>
-          <div class="container">
-            <div class="description wow fadeInUp">
-              Advantages and characteristics of PARKSON FMS (Flexible Manufacturing System):<br /><br />
-
-              The FMS takes the pallet as the storage unit, takes out the pallet of the tray and put it into the suitable storage or processing position through the lifting and horizontal movement and rotation movement of central axis. The FMS has a wide range of applications, can be stored a variety of tray, such as pallet and fixture, which are suitable for all kinds of machine tools, such as horizontal machining center, vertical machining center and every kind of five-axis machining center.</div>
-          </div>
         </div>
 
 
@@ -53,6 +47,15 @@
               <? } ?>
 
             </div>
+          </div>
+        </div>
+
+        <div class="productsBottom">
+          <div class="container">
+            <div class="description wow fadeInUp">
+              Advantages and characteristics of PARKSON FMS (Flexible Manufacturing System):<br /><br />
+
+              The FMS takes the pallet as the storage unit, takes out the pallet of the tray and put it into the suitable storage or processing position through the lifting and horizontal movement and rotation movement of central axis. The FMS has a wide range of applications, can be stored a variety of tray, such as pallet and fixture, which are suitable for all kinds of machine tools, such as horizontal machining center, vertical machining center and every kind of five-axis machining center.</div>
           </div>
         </div>
 

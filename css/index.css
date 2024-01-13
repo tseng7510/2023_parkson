@@ -13,7 +13,7 @@ section + section {
 @media screen and (min-width: 1000px) {
   .siteHeader {
     width: 100%;
-    max-width: 1070px;
+    max-width: 800px;
     padding: 70px 0 0 40px;
   }
   .siteHeader .container {
@@ -35,15 +35,7 @@ section + section {
   .siteHeader .menuBox {
     width: 100%;
   }
-}
 
-/* @media screen and (min-width: 1000px) {
-  .menuBox {
-    position: unset;
-  }
-} */
-
-@media screen and (min-width: 1000px) {
   .headFix .siteHeader {
     width: 100%;
     max-width: none;
@@ -71,6 +63,18 @@ section + section {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .siteHeader {
+    width: 100%;
+    max-width: 1070px;
+    padding: 70px 0 0 40px;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .topNav span {
+    display: none;
+  }
+}
 .mainBox {
   position: relative;
 }
@@ -98,11 +102,16 @@ section + section {
 .banner .item .pic {
   line-height: 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .banner .item .pic {
     width: 50%;
   }
 }
+/*@media screen and (max-width: 1000px) {*/
+/*  .banner .item .pic {*/
+/*    width: 50%;*/
+/*  }*/
+/*}*/
 @media screen and (max-width: 860px) {
   .banner .item .pic {
     width: 100%;
@@ -127,6 +136,11 @@ section + section {
   top: 50%;
   transform: translateY(-50%);
   bottom: auto;
+}
+@media screen and (max-width: 1400px) {
+  .banner .swiper-pagination {
+    left: 53%;
+  }
 }
 @media screen and (max-width: 860px) {
   .banner .swiper-pagination {
@@ -238,11 +252,17 @@ section + section {
   z-index: 9;
   height: 110vh;
   flex-shrink: 0;
-  width: 50%;
+  width: 43.5%;
 }
 @media screen and (max-width: 1700px) {
   .productsTopBox {
     padding: 15% 20px 20px;
+  width: 45%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .productsTopBox {
+    width: 50%;
   }
 }
 @media screen and (max-width: 860px) {
@@ -339,6 +359,10 @@ section + section {
 }
 .productsBox .picBox div {
   line-height: 0;
+}
+.productsBox .picBox .item {
+  background: url('../images/index/products_bg.jpg') center no-repeat;
+  background-size: cover;
 }
 .productsBox .infoBox {
   width: 57%;
@@ -1023,7 +1047,13 @@ section + section {
   }
 }
 .newsBox .item {
+    width:calc((100% - 50px*2)/3);
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .newsBox .item {
+      width:100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .newsBox .item + .item {
@@ -1047,11 +1077,13 @@ section + section {
 }
 .newsBox .infoBox {
   position: relative;
+  padding-bottom: 50px;
 }
 .newsBox .infoBox .title {
   color: #000;
   font-size: 1.3125rem;
   font-weight: 700;
+  height:75px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1069,6 +1101,7 @@ section + section {
   font-size: 1.125rem;
   line-height: 1.7;
   overflow: hidden;
+  height:60px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1088,6 +1121,9 @@ section + section {
   justify-content: center;
   border-radius: 100%;
   padding: 0 0 0 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .newsBox .infoBox .more::before {
   content: '';

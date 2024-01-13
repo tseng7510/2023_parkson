@@ -1006,12 +1006,25 @@ button:focus {
 
 .inquiryCar a {
   display: flex;
+  position:relative;
 }
 .inquiryCar a::before {
   content: '';
   width: 18px;
   -webkit-mask: url('../images/icon/icon_inquiry.svg') center no-repeat;
   mask: url('../images/icon/icon_inquiry.svg') center no-repeat;
+}
+.inquiryCar.hasItem a::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  background: red;
+  left: 7px;
+  top: 0;
+  animation: hasItem 1s infinite;
 }
 
 .vs a {

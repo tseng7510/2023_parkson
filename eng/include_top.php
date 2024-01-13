@@ -10,7 +10,7 @@
 
     <div class="topNav">
       <div class="vs"><a href="https://www.parkson-wu.com/showroom/en.html" target="_blank"><span>Virtual Showroom</span></a></div>
-      <div class="inquiryCar"><a href="inquiry.php"><span>INQUIRY</span></a></div>
+      <div class="inquiryCar hasItem"><a href="inquiry.php"><span>INQUIRY</span></a></div>
       <div class="language">
         <button class="btn" type="button" title="Language"><span>ENGLISH</span></button>
         <ul>

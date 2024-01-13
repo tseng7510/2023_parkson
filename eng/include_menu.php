@@ -62,6 +62,7 @@
           <li><a href="about.php">Company</a></li>
           <li><a href="milestone.php">Awards & Milestone</a></li>
           <li><a href="quality.php">Quality</a></li>
+          <li><a href="global.php">Global Agents</a></li>
         </ul>
       </div>
     </li>
@@ -69,7 +70,6 @@
       <div class="nextMenuBox">
         <ul>
           <li><a href="contact.php">Contact</a></li>
-          <li><a href="global.php">Global Agents</a></li>
         </ul>
       </div>
     </li>

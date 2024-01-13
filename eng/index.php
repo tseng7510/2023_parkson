@@ -47,9 +47,9 @@
           <div class="picBox">
             <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="item swiper-slide"><img src="../images/index/products.jpg" alt="" title="1 MNC Series/ CNC Rotary Table And Tailstock 1"></div>
-                <div class="item swiper-slide"><img src="../images/index/products.jpg" alt="" title="2 MNC Series/ CNC Rotary Table And Tailstock 2"></div>
-                <div class="item swiper-slide"><img src="../images/index/products.jpg" alt="" title="3 MNC Series/ CNC Rotary Table And Tailstock 3"></div>
+                <div class="item swiper-slide"><img src="../images/index/products.png" alt="" title="1 MNC Series/ CNC Rotary Table And Tailstock 1"></div>
+                <div class="item swiper-slide"><img src="../images/index/products.png" alt="" title="2 MNC Series/ CNC Rotary Table And Tailstock 2"></div>
+                <div class="item swiper-slide"><img src="../images/index/products.png" alt="" title="3 MNC Series/ CNC Rotary Table And Tailstock 3"></div>
               </div>
             </div>
           </div>

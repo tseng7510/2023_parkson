@@ -57,18 +57,25 @@
                     <li>Canada</li>
                     <li>USA</li>
                     <li>Brazil</li>
+                    <li>Argentina</li>
+                    <li>Peru</li>
+                    <li>Colombia</li>
                     <li>South Africa</li>
                   </ul>
                 </div>
                 <div class="item wow fadeInRight" data-wow-delay="0.4s">
                   <div class="title">Europe</div>
                   <ul>
+                    <li>Turkey</li>
                     <li>Germany</li>
                     <li>France</li>
                     <li>Italy</li>
-                    <li>Finland</li>
+                    <li>Belgium</li>
+                    <li>Netherlands</li>
+                    <li>Bulgaria</li>
+                    <li>Poland</li>
+                    <li>UK</li>
                     <li>Czech Republic</li>
-                    <li>Spain</li>
                   </ul>
                 </div>
               </div>
