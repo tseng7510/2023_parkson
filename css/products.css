@@ -49,10 +49,10 @@
 .products .listBox .item:hover .title {
   color: #fff;
 }
-.products .listBox .item a{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.products .listBox .item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .products .listBox .pic {
   max-width: 300px;
@@ -64,7 +64,7 @@
   padding: 0 30px 30px;
   border: #000000 1px solid;
   border-width: 0 0 1px 1px;
-      flex-grow: 1;
+  flex-grow: 1;
 }
 .products .listBox .info::before {
   content: '';
@@ -172,7 +172,7 @@
 .productsList2Box .productsInfo .picBox .pic,
 .productsDetailBox .productsInfo .picBox .pic {
   z-index: 1;
-  background:#FFF;
+  background: #fff;
 }
 .productsList2Box .productsInfo .infoBox,
 .productsDetailBox .productsInfo .infoBox {
@@ -609,6 +609,26 @@ aside {
     position: sticky;
   }
 }
+aside .sideBox .contentBox {
+  overflow-y: auto;
+  scrollbar-color: #0447f0 rgba(0, 0, 0, 0.2);
+  scrollbar-width: thin;
+  background: #fff;
+}
+aside .sideBox .contentBox::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+aside .sideBox .contentBox::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #0447f0;
+}
+aside .sideBox .contentBox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
 aside .title {
   color: #fff;
   padding: 20px;
@@ -760,9 +780,9 @@ aside .contentBox2 .item + .item {
 .productsFilterList .listBox .item:hover .title {
   color: #fff;
 }
-.productsFilterList .listBox .item a{
-display: block;
-    height: 100%;
+.productsFilterList .listBox .item a {
+  display: block;
+  height: 100%;
 }
 .productsFilterList .listBox .picBox {
   padding: 0 20px 20px;
@@ -770,7 +790,7 @@ display: block;
   isolation: isolate;
   background: #ebecee;
   transition: all 0.3s ease;
-    height: 100%;
+  height: 100%;
 }
 .productsFilterList .listBox .picBox .pic {
   z-index: 1;

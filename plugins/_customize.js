@@ -26,7 +26,6 @@ function lightBox(elm) {
       closeLightBoxBtn.addEventListener('click', closeLightBox);
       outLightBox.addEventListener('click', function (e) {
         e.stopPropagation();
-        console.log(e);
         closeLightBox();
       });
     });
@@ -69,4 +68,10 @@ $(window).on('load resize', function () {
     $('aside .title').off();
     $('aside .title').removeClass('active');
   }
+});
+
+$(window).on('load scroll resize', function () {
+  let obj = document.querySelector('.sideBox .contentBox').getBoundingClientRect();
+  let windowHeight = $(window).height();
+  obj.top > 0 ? $('.sideBox .contentBox').css('height', `${windowHeight - obj.top}px`) : $('.sideBox .contentBox').css('height', `auto`);
 });
