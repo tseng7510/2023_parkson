@@ -1,7 +1,34 @@
 <nav class="mainMenu" itemscope itemtype="https://schema.org/siteNavigationElement">
 
   <ul>
-    <li><a href="products.php">PRODUCTS</a>
+    <li><button type="button">PRODUCTS</button>
+      <div class="nextMenuBox">
+        <ul class="class">
+          <li><button>Support</button></li>
+          <li><button>Applications</button></li>
+        </ul>
+        <div class="listBox">
+          <div class='list'>
+            <ul>
+              <li><a href="support.php">Tooling system</a></li>
+              <li><a href="support.php">CNC rotary table / indexing table</a></li>
+            </ul>
+          </div>
+          <div class='list'>
+            <ul>
+              <li><a href="application.php">Aerospace Processing and Application Industry</a></li>
+              <li><a href="application.php">Green Energy Machinery Processing and Application</a></li>
+              <li><a href="application.php">Bicycle, electric vehicle, automobile, and ship parts processing industry</a></li>
+              <li><a href="application.php">Fluid component processing industry</a></li>
+              <li><a href="application.php">Machine Tool Parts Processing Industry</a></li>
+              <li><a href="application.php">Wafer Cutting Industry</a></li>
+              <li><a href="application.php">Plasma Power Supply</a></li>
+              <li><a href="application.php">Automated component processing industry</a></li>
+              <li><a href="application.php">Wafer Cutting Industry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </li>
     <li><button type="button">SOLUTIONS</button>
       <div class="nextMenuBox">

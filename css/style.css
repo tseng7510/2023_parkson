@@ -1006,15 +1006,16 @@ button:focus {
 
 .inquiryCar a {
   display: flex;
-  position:relative;
+  position: relative;
 }
 .inquiryCar a::before {
   content: '';
   width: 18px;
-  -webkit-mask: url('../images/icon/icon_inquiry.svg') center no-repeat;
-  mask: url('../images/icon/icon_inquiry.svg') center no-repeat;
+  height: 18px;
+  -webkit-mask: url('../images/icon/icon_inquiry2.svg') center no-repeat;
+  mask: url('../images/icon/icon_inquiry2.svg') center no-repeat;
 }
-.inquiryCar.hasItem a::after {
+/* .inquiryCar.hasItem a::after {
   content: '';
   width: 6px;
   height: 6px;
@@ -1025,7 +1026,7 @@ button:focus {
   left: 7px;
   top: 0;
   animation: hasItem 1s infinite;
-}
+} */
 
 .vs a {
   display: flex;
@@ -1635,6 +1636,7 @@ button:focus {
     display: block;
     padding: 5px 0;
     font-size: 1.3125rem;
+    font-weight: 600;
   }
 }
 
