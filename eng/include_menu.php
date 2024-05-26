@@ -1,33 +1,14 @@
 <nav class="mainMenu" itemscope itemtype="https://schema.org/siteNavigationElement">
 
   <ul>
-    <li><button type="button">PRODUCTS</button>
+    <li class="small"><button type="button">PRODUCTS</button>
       <div class="nextMenuBox">
-        <ul class="class">
-          <li><button>Support</button></li>
-          <li><button>Applications</button></li>
+        <ul>
+          <li><a href="about.php">Company</a></li>
+          <li><a href="milestone.php">Awards & Milestone</a></li>
+          <li><a href="quality.php">Quality</a></li>
+          <li><a href="global.php">Global Agents</a></li>
         </ul>
-        <div class="listBox">
-          <div class='list'>
-            <ul>
-              <li><a href="support.php">Tooling system</a></li>
-              <li><a href="support.php">CNC rotary table / indexing table</a></li>
-            </ul>
-          </div>
-          <div class='list'>
-            <ul>
-              <li><a href="application.php">Aerospace Processing and Application Industry</a></li>
-              <li><a href="application.php">Green Energy Machinery Processing and Application</a></li>
-              <li><a href="application.php">Bicycle, electric vehicle, automobile, and ship parts processing industry</a></li>
-              <li><a href="application.php">Fluid component processing industry</a></li>
-              <li><a href="application.php">Machine Tool Parts Processing Industry</a></li>
-              <li><a href="application.php">Wafer Cutting Industry</a></li>
-              <li><a href="application.php">Plasma Power Supply</a></li>
-              <li><a href="application.php">Automated component processing industry</a></li>
-              <li><a href="application.php">Wafer Cutting Industry</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </li>
     <li><button type="button">SOLUTIONS</button>
