@@ -1081,7 +1081,7 @@ button:focus {
 .language ul {
   display: none;
   position: absolute;
-  width: 100%;
+  width: 120px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -1092,8 +1092,6 @@ button:focus {
 @media screen and (max-width: 1000px) {
   .language ul {
     border-radius: 0px;
-    left: 0%;
-    transform: translateX(0%);
   }
 }
 .language ul a {
@@ -1713,6 +1711,7 @@ button:focus {
   max-width: 1360px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 1000px) {
   .footerBox .container {
@@ -1731,8 +1730,9 @@ button:focus {
 .footerBox .footerMenu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+  /* justify-content: space-between; */
+  align-items: self-end;
+  gap: 20px;
 }
 .footerBox .footerMenu .menu {
   display: flex;
@@ -2294,4 +2294,100 @@ button:focus {
 .outLightBox .lightBox iframe {
   width: 100%;
   aspect-ratio: 4/3;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.footerBox .shareBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+@media screen and (max-width: 1000px) {
+  .footerBox .shareBox ul {
+    gap: 5px;
+    justify-content: center;
+  }
+}
+.footerBox .shareBox ul li {
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.footerBox .shareBox ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .footerBox .shareBox ul a {
+    width: 36px;
+    height: 36px;
+  }
+}
+.footerBox .shareBox ul a::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #383838;
+  transition: all 0.3s ease;
+}
+.footerBox .shareBox ul li:hover {
+  background: #0447f0;
+}
+.footerBox .shareBox ul li:hover a::before {
+  background: #fff;
+}
+.footerBox .shareBox ul li .facebook::before {
+  -webkit-mask: url('../images/icon/icon_facebook.svg') center no-repeat;
+  mask: url('../images/icon/icon_facebook.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .line::before {
+  -webkit-mask: url('../images/icon/icon_line.svg') center no-repeat;
+  mask: url('../images/icon/icon_line.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .wechat::before {
+  width: 28px;
+  height: 28px;
+  -webkit-mask: url('../images/icon/icon_wechat.svg') center no-repeat;
+  mask: url('../images/icon/icon_wechat.svg') center no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .footerBox .shareBox ul li .wechat::before {
+    width: 24px;
+    height: 24px;
+  }
+}
+.footerBox .shareBox ul li .whatsapp::before {
+  -webkit-mask: url('../images/icon/icon_whatsapp.svg') center no-repeat;
+  mask: url('../images/icon/icon_whatsapp.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .youtube::before {
+  -webkit-mask: url('../images/icon/icon_youtube.svg') center no-repeat;
+  mask: url('../images/icon/icon_youtube.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .linkedin::before {
+  -webkit-mask: url('../images/icon/icon_linkedin.svg') center no-repeat;
+  mask: url('../images/icon/icon_linkedin.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .qq::before {
+  -webkit-mask: url('../images/icon/icon_qq.svg') center no-repeat;
+  mask: url('../images/icon/icon_qq.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .x::before {
+  -webkit-mask: url('../images/icon/icon_x.svg') center no-repeat;
+  mask: url('../images/icon/icon_x.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .instagram::before {
+  -webkit-mask: url('../images/icon/icon_instagram.svg') center no-repeat;
+  mask: url('../images/icon/icon_instagram.svg') center no-repeat;
+}
+.footerBox .shareBox ul li .skype::before {
+  -webkit-mask: url('../images/icon/icon_skype.svg') center no-repeat;
+  mask: url('../images/icon/icon_skype.svg') center no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */
