@@ -1410,6 +1410,13 @@ button:focus {
     padding: 9px 15px 10px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .menuBox .mainMenu > ul > li.nextLv:first-child .nextMenuBox {
+    left: 0;
+    transform: translateX(0);
+    width: 520px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .menuBox .mainMenu > ul > li > a,
   .menuBox .mainMenu > ul > li > button {

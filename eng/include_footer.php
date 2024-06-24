@@ -22,7 +22,7 @@
             <li>
               <a href="#" target="_blank" class="youtube"></a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#" target="_blank" class="linkedin"></a>
             </li>
             <li>
@@ -33,11 +33,11 @@
             </li>
             <li>
               <a href="#" target="_blank" class="qq"></a>
-            </li>
+            </li> -->
             <li>
               <a href="#" target="_blank" class="instagram"></a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#" target="_blank" class="skype"></a>
             </li>
             <li>
@@ -45,7 +45,7 @@
             </li>
             <li>
               <a href="#" target="_blank" class="wechat"></a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="copyright">
